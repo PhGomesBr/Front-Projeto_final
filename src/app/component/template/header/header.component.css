@@ -1,6 +1,7 @@
 .header{
     display: flex;
     align-items: center;
+    background-color: black;
 }
 
 .header a {
@@ -15,6 +16,7 @@
 
 .header .title-group{
     padding-left: 25px;
+    color: aliceblue;
 }
 
 .header .title-group i {
