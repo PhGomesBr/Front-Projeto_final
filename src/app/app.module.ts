@@ -23,7 +23,14 @@ import { FormaPagamentoReadComponent } from './component/formaPagamento/forma-pa
 import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
 import { ContatoReadComponent } from './component/contato/contato-read/contato-read.component';
 import { ContatoCrudComponent } from './views/contato-crud/contato-crud.component';
-
+import { ProductCreateComponent } from './component/product/product-create/product-create.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
+import { ClienteCreateComponent } from './component/cliente/cliente-create/cliente-create.component';
+import { FornecedorCreateComponent } from './component/fornecedor/fornecedor-create/fornecedor-create.component';
+import { ContatoCreateComponent } from './component/contato/contato-create/contato-create.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +47,12 @@ import { ContatoCrudComponent } from './views/contato-crud/contato-crud.componen
     FormaPagamentoReadComponent,
     FormaPagamentoCrudComponent,
     ContatoReadComponent,
-    ContatoCrudComponent
+    ContatoCrudComponent,
+    ProductCreateComponent,
+    ClienteCreateComponent,
+    FornecedorCreateComponent,
+    ContatoCreateComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -50,7 +62,11 @@ import { ContatoCrudComponent } from './views/contato-crud/contato-crud.componen
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

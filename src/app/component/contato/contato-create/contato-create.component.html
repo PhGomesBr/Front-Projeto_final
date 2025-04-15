@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Novo Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="contato.telefone" name="telefone">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Celular" [(ngModel)]="contato.celular" name="celular">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="E-mail" [(ngModel)]="contato.email" name="email">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="contatoProduct()" color="primary">
+        Salvar
+    </button>
+   
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>
