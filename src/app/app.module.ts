@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/template/header/header.component';
@@ -31,6 +30,9 @@ import { HttpClientModule } from "@angular/common/http";
 import { ClienteCreateComponent } from './component/cliente/cliente-create/cliente-create.component';
 import { FornecedorCreateComponent } from './component/fornecedor/fornecedor-create/fornecedor-create.component';
 import { ContatoCreateComponent } from './component/contato/contato-create/contato-create.component';
+import { MatTableModule } from '@angular/material/table';
+import { FormaPagamentoCreateComponent } from './component/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +54,7 @@ import { ContatoCreateComponent } from './component/contato/contato-create/conta
     ClienteCreateComponent,
     FornecedorCreateComponent,
     ContatoCreateComponent,
+    FormaPagamentoCreateComponent,
     
   ],
   imports: [
@@ -66,7 +69,8 @@ import { ContatoCreateComponent } from './component/contato/contato-create/conta
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

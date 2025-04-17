@@ -4,12 +4,10 @@ import { MatSnackBar } from "@angular/material/snack-bar";
 import { Observable } from "rxjs";
 import { Contato } from "./contato-read/contato-read.model";
 
-
-
 @Injectable({
     providedIn: 'root'
   })
-  export class formaPagamentoService {
+  export class contatoService {
   
     baseUrl = "http://localhost:3001/contato"
   

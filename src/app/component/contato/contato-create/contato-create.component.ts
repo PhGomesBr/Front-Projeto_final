@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Contato } from '../contato-read/contato-read.model';
-import { ContatoService } from '../../contato/contato.service';
 import { Router } from '@angular/router';
+import { contatoService } from '../contato.service';
 
 @Component({
   selector: 'app-contato-create',
@@ -15,8 +15,7 @@ export class ContatoCreateComponent implements OnInit{
     email: '',
   }
 
-  //importando productService
-  constructor(private contatoService: ContatoService,
+  constructor(private contatoService: contatoService,
     private router: Router) { }
  
   ngOnInit(): void {
@@ -25,12 +24,12 @@ export class ContatoCreateComponent implements OnInit{
 
   createContato(): void {
     this.contatoService.create(this.contato).subscribe(() => {
-      this.contatoService.showMessage('Produto criado!')
-      this.router.navigate(['/products'])
+      this.contatoService.showMessage('contato criado!')
+      this.router.navigate(['/contato'])
     })
   }
 
   cancel(): void {
-    this.router.navigate(['/products'])
+    this.router.navigate(['/contato'])
   }
 }
