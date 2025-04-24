@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Fornecedor } from '../fornecedor-read/fornecedor.model';
+import { Fornecedor } from '../fornecedor.model';
 import { ProductService } from '../../product/product.service';
 import { Router } from '@angular/router';
 import { FornecedorService } from '../fornecedor.service';
@@ -11,10 +11,9 @@ import { FornecedorService } from '../fornecedor.service';
 })
 export class FornecedorCreateComponent implements OnInit{
   fornecedor: Fornecedor = {
-    name: '',
-    razaoSocial: '',
-    cnpj: 0,
-    status: '',
+    forNomeFantasia: '',
+    forCnpj: 0,
+    forRazaoSocial: '',
   }
 
   //importando productService

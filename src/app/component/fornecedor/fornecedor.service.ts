@@ -2,13 +2,13 @@ import { HttpClient } from "@angular/common/http"
 import { Injectable } from "@angular/core"
 import { MatSnackBar } from "@angular/material/snack-bar"
 import { Observable } from "rxjs"
-import { Fornecedor } from './fornecedor-read/fornecedor.model';
+import { Fornecedor } from './fornecedor.model';
 @Injectable({
     providedIn: 'root'
   })
   export class FornecedorService {
   
-    baseUrl = "http://localhost:3001/fornecedor"
+    baseUrl = "http://localhost:8080/fornecedor"
   
     constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
   
@@ -33,7 +33,7 @@ import { Fornecedor } from './fornecedor-read/fornecedor.model';
     }
   
     update(fornecedor: Fornecedor): Observable<Fornecedor>{
-      const url= `${this.baseUrl}/${fornecedor.id}`
+      const url= `${this.baseUrl}/${fornecedor.forId}`
       return this.http.put<Fornecedor>(url, fornecedor)
     }
   

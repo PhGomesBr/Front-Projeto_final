@@ -2,14 +2,14 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { Observable } from "rxjs";
-import { Contato } from "./contato-read/contato-read.model";
+import { Contato } from "./contato-read.model";
 
 @Injectable({
     providedIn: 'root'
   })
   export class contatoService {
   
-    baseUrl = "http://localhost:3001/contato"
+    baseUrl = "http://localhost:8080/contato"
   
     constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
   
@@ -34,7 +34,7 @@ import { Contato } from "./contato-read/contato-read.model";
     }
   
     update(contato: Contato): Observable<Contato>{
-      const url= `${this.baseUrl}/${contato.id}`
+      const url= `${this.baseUrl}/${contato.conId}`
       return this.http.put<Contato>(url, contato)
     }
   

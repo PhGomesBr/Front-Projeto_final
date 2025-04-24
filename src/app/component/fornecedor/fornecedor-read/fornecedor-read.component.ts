@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Fornecedor } from './fornecedor.model';
+import { Fornecedor } from '../fornecedor.model';
 import { FornecedorService } from '../fornecedor.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { FornecedorService } from '../fornecedor.service';
 })
 export class FornecedorReadComponent {
   fornecedor!: Fornecedor[]
-  displayedColumns = ['id', 'razaoSocial', 'name', 'cnpj', 'status']
+  displayedColumns = ['forId', 'forNomeFantasia', 'forCnpj', 'forRazaoSocial', 'action']
 
   constructor(private fornecedorService: FornecedorService) { }
 

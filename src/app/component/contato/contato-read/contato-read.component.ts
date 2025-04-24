@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Contato } from './contato-read.model';
+import { Contato } from '../contato-read.model';
 import { contatoService } from '../contato.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { contatoService } from '../contato.service';
 })
 export class ContatoReadComponent {
   contato!: Contato[]
-  displayedColumns = ['id', 'telefone', 'celular', 'email']
+  displayedColumns = ['conId', 'conTelefoneComercial', 'conCelular', 'conEmail', 'action']
 
   constructor(private contatoService: contatoService) { }
 

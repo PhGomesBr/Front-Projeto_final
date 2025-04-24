@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Contato } from '../contato-read/contato-read.model';
+import { Contato } from '../contato-read.model';
 import { Router } from '@angular/router';
 import { contatoService } from '../contato.service';
 
@@ -10,9 +10,9 @@ import { contatoService } from '../contato.service';
 })
 export class ContatoCreateComponent implements OnInit{
   contato: Contato = {
-    telefone: '',
-    celular: '',
-    email: '',
+    conCelular: '',
+    conTelefoneComercial: '',
+    conEmail: '',
   }
 
   constructor(private contatoService: contatoService,

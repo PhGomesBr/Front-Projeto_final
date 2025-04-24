@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Cliente } from './cliente.model';
+import { Cliente } from '../cliente.model';
 import { ClienteService } from '../cliente.service';
+import { Action } from 'rxjs/internal/scheduler/Action';
 
 @Component({
   selector: 'app-cliente-read',
@@ -9,7 +10,7 @@ import { ClienteService } from '../cliente.service';
 })
 export class ClienteReadComponent {
   cliente!: Cliente[]
-  displayedColumns = ['id', 'nome', 'cpf', 'dataNacimento', 'status']
+  displayedColumns = ['cliId', 'cliNome', 'cliCpf', 'cliEmail', 'cliTelefone', 'action']
 
   constructor(private clienteService: ClienteService) { }
 

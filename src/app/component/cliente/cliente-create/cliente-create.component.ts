@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Cliente } from '../cliente-read/cliente.model';
+import { Cliente } from '../cliente.model';
 import { Router } from '@angular/router';
 import { ClienteService } from '../cliente.service';
 
@@ -10,10 +10,10 @@ import { ClienteService } from '../cliente.service';
 })
 export class ClienteCreateComponent implements OnInit{
   cliente: Cliente = {
-    nome: '',
-    cpf: 0,
-    dataNacimento: 0,
-    status: ''
+    cliNome: '',
+    cliCpf: '',
+    cliEmail: '',
+    cliTelefone: '',
   }
 
   //importando ClienteService
