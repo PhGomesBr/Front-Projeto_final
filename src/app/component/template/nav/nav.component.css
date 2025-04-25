@@ -1,19 +1,26 @@
-.sidenav{
-    background-color: #4e609b;
-    width: 200px;
+/* Estilo da barra lateral */
+.sidenav {
+    background-color: #4e609b; /* Fundo azul escuro */
+    width: 200px; /* Largura fixa */
 }
-.sidenav a{
-    color: #fff;
+
+/* Estilo dos links na barra lateral */
+.sidenav a {
+    color: #fff; /* Texto branco */
 }
-.sidenav i{
+
+/* Espaçamento entre ícones e texto nos links */
+.sidenav i {
     padding-right: 10px;
 }
 
-.content{
-    padding: 16px;
-    background-color: #ffffff;
+/* Estilo do conteúdo principal */
+.content {
+    padding: 16px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco */
 }
 
-.material-icons{
-    color: #000000;
+/* Cor padrão dos ícones */
+.material-icons {
+    color: #000000; /* Preto */
 }

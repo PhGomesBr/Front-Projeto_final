@@ -11,6 +11,7 @@ import { ContatoCrudComponent } from './views/contato-crud/contato-crud.componen
 import { ContatoCreateComponent } from './component/contato/contato-create/contato-create.component';
 import { FormaPagamentoCrudComponent } from './views/forma-pagamento-crud/forma-pagamento-crud.component';
 import { FormaPagamentoCreateComponent } from './component/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
+import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ component: ContatoCreateComponent
 {
 path: "formaPagamento/create",
 component: FormaPagamentoCreateComponent
+},
+{
+  path: "product/update/:id",
+  component: ProductUpdateComponent
 }
 ];
 

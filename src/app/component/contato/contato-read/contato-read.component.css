@@ -1,12 +1,18 @@
-table{
+/* Define a largura da tabela para ocupar 100% do espaço disponível 
+   e aplica uma cor de fundo cinza claro */
+   table {
     width: 100%;
     background-color: #e7e7e7;
 }
 
-.edit > i{
+/* Estiliza os ícones dentro de elementos com a classe "edit" 
+   com uma cor amarela */
+.edit > i {
     color: #d9cd26;
 }
 
-.delete > i{
+/* Estiliza os ícones dentro de elementos com a classe "delete" 
+   com uma cor vermelha */
+.delete > i {
     color: #e35e6b;
 }

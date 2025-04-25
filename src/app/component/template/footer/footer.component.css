@@ -1,16 +1,18 @@
-.footer{
-    /*posição fixa*/
+/* Estilo para o rodapé */
+.footer {
+    /* Define posição fixa para o rodapé */
     position: fixed;
-    /*coloca toolbar na parte de baixa */
+    /* Posiciona o rodapé na parte inferior da página */
     bottom: 0;
-    display: flex;
-    /*coloca no final da linha. sendo no lado direiro parte inferior*/
+    display: flex; /* Define layout flexível */
+    /* Alinha o conteúdo no final da linha (lado direito) */
     justify-content: flex-end;
-    background-color: rgb(39, 38, 38);
+    background-color: rgb(39, 38, 38); /* Cor de fundo escura */
 }
 
-.footer > span{
-    font-size: 1.1rem;
-    font-weight: 300;
-    color: aliceblue;
+/* Estilo para o texto dentro do rodapé */
+.footer > span {
+    font-size: 1.1rem; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte leve */
+    color: aliceblue; /* Cor do texto */
 }

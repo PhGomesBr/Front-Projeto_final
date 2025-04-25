@@ -1,9 +1,7 @@
-/* Estiliza o formulário para usar um layout flexível em coluna */
 form{
     display: flex;
     flex-direction: column;
 }
-/*estiliza o bottao*/
 button{
     margin: 20px 15px 0px 0px;
-}
+}       

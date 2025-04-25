@@ -8,29 +8,28 @@ import { Router } from '@angular/router';
   templateUrl: './product-create.component.html',
   styleUrls: ['./product-create.component.css']
 })
-export class ProductCreateComponent implements OnInit{
-    product: Product = {
-      proNome: '',
-      proPrecoCusto: 0,
-      proPrecoVenda: 0,
-  }
+export class ProductCreateComponent implements OnInit {
+  product: Product = {
+    proNome: '', // Nome do produto
+    proPrecoCusto: 0, // Preço de custo inicial
+    proPrecoVenda: 0, // Preço de venda inicial
+  };
 
-  //importando productService
-  constructor(private productService: ProductService,
-    private router: Router) { }
- 
-  ngOnInit(): void {
-   
-  }
+  // Injeção de dependências: ProductService e Router
+  constructor(private productService: ProductService, private router: Router) {}
 
+  ngOnInit(): void {}
+
+  // Método para criar um produto
   createProduct(): void {
     this.productService.create(this.product).subscribe(() => {
-      this.productService.showMessage('Produto criado!')
-      this.router.navigate(['/products'])
-    })
+      this.productService.showMessage('Produto criado!'); // Exibe mensagem de sucesso
+      this.router.navigate(['/products']); // Redireciona para a lista de produtos
+    });
   }
 
+  // Método para cancelar a criação e voltar à lista de produtos
   cancel(): void {
-    this.router.navigate(['/products'])
+    this.router.navigate(['/products']);
   }
 }

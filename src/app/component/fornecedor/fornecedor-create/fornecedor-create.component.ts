@@ -1,37 +1,40 @@
 import { Component, OnInit } from '@angular/core';
 import { Fornecedor } from '../fornecedor.model';
-import { ProductService } from '../../product/product.service';
 import { Router } from '@angular/router';
 import { FornecedorService } from '../fornecedor.service';
 
 @Component({
-  selector: 'app-fornecedor-create',
-  templateUrl: './fornecedor-create.component.html',
-  styleUrls: ['./fornecedor-create.component.css']
+  selector: 'app-fornecedor-create', // Define o seletor do componente
+  templateUrl: './fornecedor-create.component.html', // Caminho para o template HTML
+  styleUrls: ['./fornecedor-create.component.css'] // Caminho para o arquivo de estilos CSS
 })
-export class FornecedorCreateComponent implements OnInit{
+export class FornecedorCreateComponent implements OnInit {
+  // Inicializa o objeto fornecedor com valores padrão
   fornecedor: Fornecedor = {
     forNomeFantasia: '',
     forCnpj: 0,
     forRazaoSocial: '',
-  }
+  };
 
-  //importando productService
-  constructor(private fornecedorService: FornecedorService,
-    private router: Router) { }
- 
-  ngOnInit(): void {
-   
-  }
+  // Injeta o serviço FornecedorService e o roteador Router no construtor
+  constructor(
+    private fornecedorService: FornecedorService,
+    private router: Router
+  ) {}
 
+  // Método executado ao inicializar o componente
+  ngOnInit(): void {}
+
+  // Método para criar um novo fornecedor
   createFornecedor(): void {
     this.fornecedorService.create(this.fornecedor).subscribe(() => {
-      this.fornecedorService.showMessage('Fornecedor criado!')
-      this.router.navigate(['/products'])
-    })
+      this.fornecedorService.showMessage('Fornecedor criado!'); // Exibe mensagem de sucesso
+      this.router.navigate(['/products']); // Redireciona para a lista de produtos
+    });
   }
 
+  // Método para cancelar a criação e voltar para a lista de fornecedores
   cancel(): void {
-    this.router.navigate(['/fornecedor'])
+    this.router.navigate(['/fornecedor']);
   }
 }
