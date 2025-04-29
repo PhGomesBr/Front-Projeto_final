@@ -12,7 +12,7 @@ import { Cliente } from './cliente.model';
 export class ClienteService {
 
     // URL base para as requisições HTTP relacionadas ao cliente
-    baseUrl = "http://localhost:8080/cliente";
+    baseUrl = "http://localhost:8080/clientes";
 
     // Construtor que injeta dependências necessárias
     constructor(private snackBar: MatSnackBar, private http: HttpClient) { }

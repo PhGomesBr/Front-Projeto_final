@@ -33,6 +33,11 @@ import { ContatoCreateComponent } from './component/contato/contato-create/conta
 import { MatTableModule } from '@angular/material/table';
 import { FormaPagamentoCreateComponent } from './component/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
 import { ProductUpdateComponent } from './component/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './component/product/product-delete/product-delete.component';
+import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
+import { ClienteUpdateComponent } from './component/cliente/cliente-update/cliente-update.component';
+import { FornecedorUpdateComponent } from './component/fornecedor/fornecedor-update/fornecedor-update.component';
+import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-delete/fornecedor-delete.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +62,11 @@ import { ProductUpdateComponent } from './component/product/product-update/produ
     ContatoCreateComponent,
     FormaPagamentoCreateComponent,
     ProductUpdateComponent,
+    ProductDeleteComponent,
+    ClienteDeleteComponent,
+    ClienteUpdateComponent,
+    FornecedorUpdateComponent,
+    FornecedorDeleteComponent,
     
   ],
   imports: [

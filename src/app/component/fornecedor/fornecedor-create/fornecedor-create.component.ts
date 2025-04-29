@@ -29,7 +29,7 @@ export class FornecedorCreateComponent implements OnInit {
   createFornecedor(): void {
     this.fornecedorService.create(this.fornecedor).subscribe(() => {
       this.fornecedorService.showMessage('Fornecedor criado!'); // Exibe mensagem de sucesso
-      this.router.navigate(['/products']); // Redireciona para a lista de produtos
+      this.router.navigate(['/fornecedor']); // Redireciona para a lista de produtos
     });
   }
 

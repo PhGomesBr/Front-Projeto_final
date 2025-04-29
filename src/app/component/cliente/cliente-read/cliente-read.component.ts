@@ -11,7 +11,7 @@ import { ClienteService } from '../cliente.service';
 })
 export class ClienteReadComponent {
   // Array que armazena os dados dos clientes
-  cliente!: Cliente[];
+  clientes!: Cliente[];
 
   // Colunas exibidas na tabela
   displayedColumns = ['cliId', 'cliNome', 'cliCpf', 'cliEmail', 'cliTelefone', 'action'];
@@ -22,9 +22,9 @@ export class ClienteReadComponent {
   // Método chamado ao inicializar o componente
   ngOnInit(): void {
     // Chama o método 'read' do serviço para buscar os dados dos clientes
-    this.clienteService.read().subscribe(cliente => {
-      this.cliente = cliente; // Armazena os dados retornados no array 'cliente'
-      console.log(cliente); // Exibe os dados no console para depuração
+    this.clienteService.read().subscribe(clientes => {
+      this.clientes = clientes; // Armazena os dados retornados no array 'cliente'
+      console.log(clientes); // Exibe os dados no console para depuração
     });
   }
 }

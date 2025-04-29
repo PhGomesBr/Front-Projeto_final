@@ -9,7 +9,7 @@ import { Contato } from "./contato-read.model"; // Importa o modelo de dados Con
 })
 export class contatoService {
 
-    baseUrl = "http://localhost:8080/contato"; // URL base para as requisições HTTP
+    baseUrl = "http://localhost:8080/contatos"; // URL base para as requisições HTTP
 
     constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
