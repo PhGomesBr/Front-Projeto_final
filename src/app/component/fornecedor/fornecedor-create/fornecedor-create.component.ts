@@ -12,7 +12,7 @@ export class FornecedorCreateComponent implements OnInit {
   // Inicializa o objeto fornecedor com valores padrão
   fornecedor: Fornecedor = {
     forNomeFantasia: '',
-    forCnpj: 0,
+    forCnpj: '',
     forRazaoSocial: '',
   };
 

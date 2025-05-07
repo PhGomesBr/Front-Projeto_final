@@ -16,8 +16,8 @@ export class ClienteUpdateComponent {
     private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.clienteService.readById(id!).subscribe((cliente: Cliente) =>{
+    const cliId = this.route.snapshot.paramMap.get('cliId')
+    this.clienteService.readById(cliId!).subscribe((cliente: Cliente) =>{
       this.cliente = cliente
     })
   }

@@ -17,8 +17,8 @@ export class ClienteDeleteComponent {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const proId = this.route.snapshot.paramMap.get('cliId');
-    this.clienteService.readById(proId!).subscribe(cliente =>{
+    const cliId = this.route.snapshot.paramMap.get('cliId');
+    this.clienteService.readById(cliId!).subscribe(cliente =>{
       this.cliente = cliente
     })
   }

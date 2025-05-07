@@ -81,7 +81,7 @@ component: FormaPagamentoCreateComponent
 {
   path: "fornecedors/update/:forId",
   component: FornecedorUpdateComponent
-}
+},
 ];
 
 @NgModule({
