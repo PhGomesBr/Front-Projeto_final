@@ -8,7 +8,7 @@ import { FornecedorService } from '../fornecedor.service';
   styleUrls: ['./fornecedor-read.component.css'] // Caminho para o arquivo de estilos CSS
 })
 export class FornecedorReadComponent implements OnInit {
-  fornecedors!: Fornecedor[]; // Lista de fornecedores
+  fornecedor!: Fornecedor[]; // Lista de fornecedores
   displayedColumns = ['forId', 'forNomeFantasia', 'forCnpj', 'forRazaoSocial', 'action']; // Colunas exibidas na tabela
 
   // Injeta o serviço FornecedorService no construtor
@@ -16,9 +16,9 @@ export class FornecedorReadComponent implements OnInit {
 
   // Método executado ao inicializar o componente
   ngOnInit(): void {
-    this.fornecedorService.read().subscribe(fornecedors => {
-      this.fornecedors = fornecedors; // Atribui os dados recebidos à lista de fornecedores
-      console.log(fornecedors); // Exibe os dados no console para depuração
+    this.fornecedorService.read().subscribe(fornecedor => {
+      this.fornecedor = fornecedor; // Atribui os dados recebidos à lista de fornecedores
+      console.log(fornecedor); // Exibe os dados no console para depuração
     });
   }
 }

@@ -1,6 +1,6 @@
 // Define uma interface chamada contato
 export interface Contato{
-    conId?: string
+    conId?: number
     conTelefoneComercial: string
     conCelular: string
     conEmail: string

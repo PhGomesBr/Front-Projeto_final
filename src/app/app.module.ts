@@ -38,6 +38,10 @@ import { ClienteDeleteComponent } from './component/cliente/cliente-delete/clien
 import { ClienteUpdateComponent } from './component/cliente/cliente-update/cliente-update.component';
 import { FornecedorUpdateComponent } from './component/fornecedor/fornecedor-update/fornecedor-update.component';
 import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-delete/fornecedor-delete.component';
+import { FormaPagamentoUpdateComponent } from './component/formaPagamento/forma-pagamento-update/forma-pagamento-update.component';
+import { FormaPagamentoDeleteComponent } from './component/formaPagamento/forma-pagamento-delete/forma-pagamento-delete.component';
+import { ContatoUpdateComponent } from './component/contato/contato-update/contato-update.component';
+import { ContatoDeleteComponent } from './component/contato/contato-delete/contato-delete.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +71,10 @@ import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-del
     ClienteUpdateComponent,
     FornecedorUpdateComponent,
     FornecedorDeleteComponent,
+    FormaPagamentoUpdateComponent,
+    FormaPagamentoDeleteComponent,
+    ContatoUpdateComponent,
+    ContatoDeleteComponent,
     
   ],
   imports: [

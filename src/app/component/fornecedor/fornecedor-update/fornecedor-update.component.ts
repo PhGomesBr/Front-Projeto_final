@@ -25,11 +25,11 @@ export class FornecedorUpdateComponent {
   updateFornecedor(): void {
     this.fornecedorService.update(this.fornecedor).subscribe(() => {
       this.fornecedorService.showMessage('Fornecedor atualizado com sucesso!')
-      this.router.navigate(['/fornecedors'])
+      this.router.navigate(['/fornecedor'])
     })
   }
 
   cancel(): void {
-    this.router.navigate(['/fornecedors'])
+    this.router.navigate(['/fornecedor'])
   }
 }

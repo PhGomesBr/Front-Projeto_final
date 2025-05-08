@@ -16,6 +16,9 @@ import { ProductDeleteComponent } from './component/product/product-delete/produ
 import { ClienteUpdateComponent } from './component/cliente/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
 import { FornecedorUpdateComponent } from './component/fornecedor/fornecedor-update/fornecedor-update.component';
+import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-delete/fornecedor-delete.component';
+import { FormaPagamentoUpdateComponent } from './component/formaPagamento/forma-pagamento-update/forma-pagamento-update.component';
+import { ContatoDeleteComponent } from './component/contato/contato-delete/contato-delete.component';
 
 const routes: Routes = [
   {
@@ -31,7 +34,7 @@ const routes: Routes = [
   component: ProductCreateComponent
 },
 {
-  path: "cliente",
+  path: "clientes",
   component: ClienteCrudComponent
 },
 {
@@ -79,8 +82,20 @@ component: FormaPagamentoCreateComponent
   component: ClienteDeleteComponent
 },
 {
-  path: "fornecedors/update/:forId",
+  path: "fornecedor/update/:forId",
   component: FornecedorUpdateComponent
+},
+{
+  path: "fornecedor/delete/:forId",
+  component: FornecedorDeleteComponent
+},
+{
+  path: "formaPagamento/update/:fpgid",
+  component: FormaPagamentoUpdateComponent
+},
+{
+  path: "contato/delete/:conId",
+  component: ContatoDeleteComponent
 },
 ];
 
