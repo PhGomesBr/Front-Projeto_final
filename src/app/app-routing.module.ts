@@ -20,6 +20,7 @@ import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-del
 import { FormaPagamentoUpdateComponent } from './component/formaPagamento/forma-pagamento-update/forma-pagamento-update.component';
 import { ContatoDeleteComponent } from './component/contato/contato-delete/contato-delete.component';
 import { ContatoUpdateComponent } from './component/contato/contato-update/contato-update.component';
+import { FormaPagamentoDeleteComponent } from './component/formaPagamento/forma-pagamento-delete/forma-pagamento-delete.component';
 
 const routes: Routes = [
   {
@@ -91,8 +92,12 @@ component: FormaPagamentoCreateComponent
   component: FornecedorDeleteComponent
 },
 {
-  path: "formaPagamento/update/:fpgid",
+  path: "formaPagamento/update/:fpgId",
   component: FormaPagamentoUpdateComponent
+},
+{
+  path: "formaPagamento/delete/:fpgId",
+  component: FormaPagamentoDeleteComponent
 },
 {
   path: "contato/delete/:conId",
