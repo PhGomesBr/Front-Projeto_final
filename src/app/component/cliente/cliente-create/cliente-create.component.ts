@@ -32,12 +32,12 @@ export class ClienteCreateComponent implements OnInit {
   createCliente(): void {
     this.clienteService.create(this.cliente).subscribe(() => {
       this.clienteService.showMessage('Cliente criado!'); // Exibe mensagem de sucesso
-      this.router.navigate(['/cliente']); // Navega para a lista de clientes
+      this.router.navigate(['/clientes']); // Navega para a lista de clientes
     });
   }
 
   // Método para cancelar a operação e voltar para a lista de clientes
   cancel(): void {
-    this.router.navigate(['/cliente']); // Navega para a lista de clientes
+    this.router.navigate(['/clientes']); // Navega para a lista de clientes
   }
 }

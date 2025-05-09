@@ -16,6 +16,6 @@ export class ClienteCrudComponent implements OnInit {
   
   // Método para navegar para a tela de criação de clientes
   navigateToClienteCreate(): void {
-    this.router.navigate(['/cliente/create']);
+    this.router.navigate(['/clientes/create']);
   }
 }

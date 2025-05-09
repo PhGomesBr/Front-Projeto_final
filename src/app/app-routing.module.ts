@@ -19,6 +19,7 @@ import { FornecedorUpdateComponent } from './component/fornecedor/fornecedor-upd
 import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-delete/fornecedor-delete.component';
 import { FormaPagamentoUpdateComponent } from './component/formaPagamento/forma-pagamento-update/forma-pagamento-update.component';
 import { ContatoDeleteComponent } from './component/contato/contato-delete/contato-delete.component';
+import { ContatoUpdateComponent } from './component/contato/contato-update/contato-update.component';
 
 const routes: Routes = [
   {
@@ -38,7 +39,7 @@ const routes: Routes = [
   component: ClienteCrudComponent
 },
 {
-path: "cliente/create",
+path: "clientes/create",
 component: ClienteCreateComponent
 },
 {
@@ -96,6 +97,10 @@ component: FormaPagamentoCreateComponent
 {
   path: "contato/delete/:conId",
   component: ContatoDeleteComponent
+},
+{
+  path: "contato/update/:conId",
+  component: ContatoUpdateComponent
 },
 ];
 
