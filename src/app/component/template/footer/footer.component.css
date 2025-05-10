@@ -7,7 +7,7 @@
     display: flex; /* Define layout flexível */
     /* Alinha o conteúdo no final da linha (lado direito) */
     justify-content: flex-end;
-    background-color: rgb(39, 38, 38); /* Cor de fundo escura */
+    background-color: rgb(0, 0, 0); /* Cor de fundo escura */
 }
 
 /* Estilo para o texto dentro do rodapé */

@@ -1,6 +1,6 @@
 /* Estilo da barra lateral */
 .sidenav {
-    background-color: #4e609b; /* Fundo azul escuro */
+    background-color: #314791; /* Fundo azul escuro */
     width: 200px; /* Largura fixa */
 }
 
@@ -23,4 +23,18 @@
 /* Cor padrão dos ícones */
 .material-icons {
     color: #000000; /* Preto */
+}
+/* Efeito de brilho ao passar o mouse */
+.sidenav a:hover {
+    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00; /* Efeito de brilho neon */
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00; /* Efeito neon no texto */
+    background-color: #3b5998; /* Leve alteração na cor de fundo */
+    font-size: 16px; /* Define o tamanho da fonte do texto do botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    border-radius: 5px; /* Define bordas arredondadas */
+    margin: 5px 0; /* Margem entre os links */
+    padding: 10px; /* Espaçamento interno */    
+    height: 40px; /* Define a altura do botão */
+    width: 100%; /* Largura total */
+    transition: all 0.3s ease; /* Suaviza as mudanças de estilo */
 }
