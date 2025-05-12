@@ -2,7 +2,7 @@
 .header {
     display: flex; /* Define layout flexível */
     align-items: center; /* Alinha itens verticalmente ao centro */
-    background-color: rgb(8, 0, 0); /* Fundo preto */
+    background-color: #000000; /* Fundo */
 }
 
 /* Estilo dos links no cabeçalho */
@@ -20,7 +20,7 @@
 /* Estilo do grupo de título no cabeçalho */
 .header .title-group {
     padding-left: 25px; /* Espaçamento à esquerda */
-    color: rgb(0, 136, 255); /* Cor do texto */
+    color: rgb(132, 0, 255); /* Cor do texto */
 }
 
 /* Estilo do ícone dentro do grupo de título */

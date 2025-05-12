@@ -3,7 +3,6 @@ table {
     width: 100%; /* Define a largura da tabela como 100% do container */
     background-color: #e7e7e7; /* Define a cor de fundo da tabela */
     border-radius: 5px; /* Define bordas arredondadas */
-    box-shadow: 0 0 2px #00ff00, 0 0 5px #00ff00; /* Efeito de brilho verde */
 }
 
 /* Estiliza o ícone de edição */
