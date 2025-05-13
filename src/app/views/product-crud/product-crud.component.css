@@ -1,3 +1,21 @@
 button{
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* define a margim do botão */
+    width: 100%; /* define a largura do botão */
+    height: 40px; /* define a altura do botão */
+    background-color: #13286e; /* define a cor de fundo do botão */
+    color: white; /* define a cor do texto do botão */
+    border: none; /* remove a borda do botão */
+    border-radius: 5px; /* define bordas arredondadas */
+    transition: all 0.3s ease; /* Suaviza as mudanças de estilo */
+
+}
+
+/* Efeito neon ao passar o mouse */
+button:hover {
+    background-color: #1a3386; /* Leve alteração na cor de fundo */
+}
+
+/* Animação ao clicar */
+button:active {
+    transform: scale(0.80); /* Reduz ligeiramente o tamanho do botão */
 }

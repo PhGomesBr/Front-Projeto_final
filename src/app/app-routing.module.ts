@@ -22,6 +22,8 @@ import { ContatoDeleteComponent } from './component/contato/contato-delete/conta
 import { ContatoUpdateComponent } from './component/contato/contato-update/contato-update.component';
 import { FormaPagamentoDeleteComponent } from './component/formaPagamento/forma-pagamento-delete/forma-pagamento-delete.component';
 
+
+
 const routes: Routes = [
   {
     path: "",

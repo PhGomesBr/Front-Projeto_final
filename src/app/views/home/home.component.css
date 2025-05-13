@@ -1,13 +1,48 @@
-.home .title{
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.2;
-
-    background-color: #ffffff;
+.cards {
+    display: grid; /* Define o contêiner como um grid layout. */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cria colunas responsivas com largura mínima de 200px e máxima de 1fr (fração do espaço disponível). */
+    gap: 20px; /* Define o espaçamento entre os itens do grid. */
+    margin-bottom: 40px; /* Adiciona um espaçamento inferior ao contêiner. */
 }
 
-.home .subtitle{
-    font-size: 1.1rem;
-    background-color: #ffffff;
+.card {
+    background: #2b2b3d; /* Define a cor de fundo do cartão. */
+    padding: 20px; /* Adiciona espaçamento interno ao cartão. */
+    border-radius: 12px; /* Arredonda os cantos do cartão. */
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.1); /* Adiciona uma sombra suave ao cartão. */
+    transition: 0.3s; /* Define uma transição suave para mudanças no estilo do cartão. */
 }
 
+.card h3 {
+    margin-bottom: 10px; /* Adiciona espaçamento inferior ao título do cartão. */
+    color: #00ffcc; /* Define a cor do texto do título. */
+}
+
+.card p {
+    color: #e4e0e0; /* Define a cor do texto do parágrafo. */
+}
+
+.card.warning {
+    background: #442222; /* Define uma cor de fundo específica para cartões de aviso. */
+    color: #ff8080; /* Define a cor do texto para cartões de aviso. */
+    border: 1px solid #ff4d4d; /* Adiciona uma borda vermelha aos cartões de aviso. */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Move o cartão ligeiramente para cima ao passar o mouse. */
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2); /* Aumenta a intensidade da sombra ao passar o mouse. */
+}
+
+.charts {
+    display: flex; /* Define o contêiner como um flexbox. */
+    flex-wrap: wrap; /* Permite que os itens do flexbox quebrem para a próxima linha, se necessário. */
+    gap: 20px; /* Define o espaçamento entre os itens do flexbox. */
+}
+
+.chart {
+    flex: 1 1 300px; /* Define o comportamento flexível do item com largura mínima de 300px. */
+    background: #2a2a3a; /* Define a cor de fundo do gráfico. */
+    padding: 30px; /* Adiciona espaçamento interno ao gráfico. */
+    border-radius: 12px; /* Arredonda os cantos do gráfico. */
+    text-align: center; /* Centraliza o texto dentro do gráfico. */
+}
