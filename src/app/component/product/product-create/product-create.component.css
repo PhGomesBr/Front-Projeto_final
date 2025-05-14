@@ -63,3 +63,9 @@ button.mat-raised-button {
 button.mat-raised-button:hover {
     background-color: #303f9f; /* Cor de fundo do botão ao passar o mouse */
 }
+.scrollable-form {
+    max-height: 500px; /* ou o valor que funcionar melhor para você */
+    overflow-y: auto;
+    padding-right: 10px; /* espaço para a barra de rolagem */
+}
+

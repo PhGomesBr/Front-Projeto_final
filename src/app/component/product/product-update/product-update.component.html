@@ -1,6 +1,7 @@
 <mat-card>
-    <mat-card-title>Alterar Produto</mat-card-title>
-    <form>
+    <mat-card-title>Atualizar Produto</mat-card-title>
+    <div class="scrollable-form">
+      <form>
         <mat-form-field>
             <input matInput placeholder="Nome" [(ngModel)]="product.proNome" name="proNome">
         </mat-form-field>
@@ -8,13 +9,13 @@
             <textarea matInput placeholder="Descrição" [(ngModel)]="product.proDescricao" name="proDescricao"></textarea>
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="number" placeholder="Preço de custo (R$)" [(ngModel)]="product.proPrecoCusto" name="proPrecoCusto" step="0.01">
+            <input matInput type="number" placeholder="Preço de custo (R$)" [(ngModel)]="product.proPrecoCusto" name="proPrecoCusto" step="0.01" min="0">
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="number" placeholder="Preço de venda (R$)" [(ngModel)]="product.proPrecoVenda" name="proPrecoVenda" step="0.01">
+            <input matInput type="number" placeholder="Preço de venda (R$)" [(ngModel)]="product.proPrecoVenda" name="proPrecoVenda" step="0.01" min="0">
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="number" placeholder="Quantidade em estoque" [(ngModel)]="product.proQuantidadeEstoque" name="proQuantidadeEstoque">
+            <input matInput type="number" placeholder="Quantidade em estoque" [(ngModel)]="product.proQuantidadeEstoque" name="proQuantidadeEstoque" min="0">
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Categoria" [(ngModel)]="product.proCategoria" name="proCategoria">
@@ -47,14 +48,14 @@
             <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
             <mat-datepicker #picker2></mat-datepicker>
           </mat-form-field>
-    </form>
-
     <button mat-raised-button (click)="updateProduct()" color="primary">
-        Atualizar
+        Atulizar
     </button>
    
     <button mat-raised-button (click)="cancel()">
         Cancelar
-    </button>
-
-</mat-card>
+    </button>    
+      </form> 
+    </div>
+  </mat-card>
+  
