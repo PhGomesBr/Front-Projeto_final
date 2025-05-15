@@ -1,6 +1,6 @@
 /* Estilo da barra lateral */
 .sidenav {
-    background-color: #0b0c4d; /* Fundo azul escuro */
+    background-color: #0e0230; /* Fundo azul escuro */
     width: 200px; /* Largura fixa */
 }
 
@@ -16,8 +16,8 @@
 
 /* Estilo do conteúdo principal */
 .content {
-    padding: 16px; /* Espaçamento interno */
-    background-color: #f7f1f1; /* Fundo branco */
+    padding: 17px; /* Espaçamento interno */
+    background-color: #13141f; /* Fundo branco */
 }
 
 /* Cor padrão dos ícones */
@@ -26,7 +26,7 @@
 }
 /* Efeito de brilho ao passar o mouse */
 .sidenav a:hover {
-    background-color: #2f31a0; /* Leve alteração na cor de fundo */
+    background-color: #140342; /* Leve alteração na cor de fundo */
     font-size: 16px; /* Define o tamanho da fonte do texto do botão */
     border-radius: 5px; /* Define bordas arredondadas */
     margin: 5px 0; /* Margem entre os links */

@@ -7,11 +7,11 @@
 }
 /* Estilo do corpo da página: Define a fonte, cor de fundo e cor do texto */
 html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0; /* Certifique-se de que não há espaço extra */
+    margin: 0;
     padding: 0;
-    background: #121212; /* Cor de fundo que cobre toda a página */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Evita scroll horizontal, caso algum elemento esteja "vazando" */
 }
 
 /* Estilo do elemento principal: Define um gradiente de fundo, altura mínima e padding */
