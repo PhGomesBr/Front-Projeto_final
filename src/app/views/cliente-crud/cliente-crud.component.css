@@ -1,8 +1,22 @@
+main{
+    background: linear-gradient(135deg, #121212 0%, #14142b 100%); /* Cor de fundo do main */
+    min-height: 75vh; /* Altura mínima do main */
+    padding: 40px 20px; /* Espaçamento interno do main */
+}
+mat-card{
+    background: linear-gradient(145deg, #F1F1F1, #0d0d0d); /* Cor de fundo do cartão */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow:  0 4px 15px rgba(192, 62, 62, 0.2); /* Sombra do cartão */
+    padding: 20px; /* Espaçamento interno do cartão */
+    margin-bottom: 20px; /* Espaçamento entre os cartões */
+    
+}
+
 button{
     margin-bottom: 30px; /* define a margim do botão */
     width: 100%; /* define a largura do botão */
     height: 40px; /* define a altura do botão */
-    background-color: #13286e; /* define a cor de fundo do botão */
+    background-color: #A020F0; /* define a cor de fundo do botão */
     color: white; /* define a cor do texto do botão */
     border: none; /* remove a borda do botão */
     border-radius: 5px; /* define bordas arredondadas */
@@ -12,7 +26,7 @@ button{
 
 /* Efeito neon ao passar o mouse */
 button:hover {
-    background-color: #1a3386; /* Leve alteração na cor de fundo */
+    background-color: #FF2DC6; /* Leve alteração na cor de fundo */
 }
 
 /* Animação ao clicar */

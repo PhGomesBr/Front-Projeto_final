@@ -1,16 +1,47 @@
 /* Estiliza a tabela para ocupar toda a largura disponível e define uma cor de fundo */
 table {
     width: 100%; /* Define a largura da tabela como 100% do container */
-    background-color: #e7e7e7; /* Define a cor de fundo da tabela */
-    border-radius: 5px; /* Define bordas arredondadas */
+    background-color: #b6b6b6; /* Cor de fundo escura */
+    border-radius: 10px; /* Bordas arredondadas */
+    border-collapse: collapse; /* Remove espaços entre as células */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para a tabela */
+}
+
+/* Estiliza as células da tabela */
+th, td {
+    padding: 15px; /* Adiciona espaçamento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+    border-bottom: 1px solid #2a065a; /* Borda inferior mais escura */
+}
+
+/* Estiliza o cabeçalho da tabela */
+th {
+    background-color: #d81515; /* Cor de fundo do cabeçalho */
+    color: #d9d9d9; /* Cor do texto do cabeçalho */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Efeito de hover nas linhas da tabela */
+tr:hover {
+    background-color: #3a3a3a; /* Cor de fundo ao passar o mouse */
 }
 
 /* Estiliza o ícone de edição */
 .edit > i {
-    color: #d9cd26; /* Define a cor do ícone de edição como amarelo */
+    color: #4caf50; /* Verde para o ícone de edição */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: transform 0.2s; /* Transição suave */
 }
 
 /* Estiliza o ícone de exclusão */
 .delete > i {
-    color: #e35e6b; /* Define a cor do ícone de exclusão como vermelho */
+    color: #f44336; /* Vermelho para o ícone de exclusão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: transform 0.2s; /* Transição suave */
+}
+
+/* Adiciona um efeito de hover nos ícones */
+.edit > i:hover, .delete > i:hover {
+    opacity: 0.8; /* Diminui a opacidade ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
 }

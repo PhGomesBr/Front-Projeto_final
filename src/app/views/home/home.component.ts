@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-home', // Define o seletor do componente
   templateUrl: './home.component.html', // Caminho para o template HTML
