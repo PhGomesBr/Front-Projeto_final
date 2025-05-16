@@ -1,18 +1,66 @@
-/* Define a largura da tabela para ocupar 100% do espaço disponível 
-   e aplica uma cor de fundo cinza claro */
-   table {
+/* Fundo do container */
+.mat-elevation-z4 {
+    background: linear-gradient(to bottom right, #2a003f, #1a1a1a); /* Fundo com gradiente escuro */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo geral da tabela */
+table {
     width: 100%;
-    background-color: #e7e7e7;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #1e1e1e;
 }
 
-/* Estiliza os ícones dentro de elementos com a classe "edit" 
-   com uma cor amarela */
-.edit > i {
-    color: #d9cd26;
+/* Cabeçalho */
+th {
+    background-color: #2c2c2c;
+    color: #f1f1f1;
+    font-weight: bold;
+    padding: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-/* Estiliza os ícones dentro de elementos com a classe "delete" 
-   com uma cor vermelha */
+/* Células */
+td {
+    padding: 14px 16px;
+    color: #e0e0e0;
+    border-bottom: 1px solid #383838;
+}
+
+/* Linha ao passar o mouse */
+tr:hover {
+    background-color: #292929;
+    transition: background 0.3s ease;
+}
+
+/* Ícones de ação */
+.edit > i,
 .delete > i {
-    color: #e35e6b;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* Ícone editar */
+.edit > i {
+    color: #00e676; /* Verde neon */
+}
+
+/* Ícone deletar */
+.delete > i {
+    color: #ff5252; /* Vermelho neon */
+}
+
+/* Efeitos ao passar o mouse nos ícones */
+.edit > i:hover,
+.delete > i:hover {
+    opacity: 0.8;
+    transform: scale(1.15);
 }

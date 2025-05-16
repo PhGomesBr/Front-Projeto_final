@@ -1,35 +1,41 @@
-main{
-    background: linear-gradient(135deg, #121212 0%, #14142b 100%); /* Cor de fundo do main */
-    min-height: 75vh; /* Altura mínima do main */
-    padding: 40px 20px; /* Espaçamento interno do main */
-}
-mat-card{
-    background: linear-gradient(145deg, #F1F1F1, #0d0d0d); /* Cor de fundo do cartão */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow:  0 4px 15px rgba(192, 62, 62, 0.2); /* Sombra do cartão */
-    padding: 20px; /* Espaçamento interno do cartão */
-    margin-bottom: 20px; /* Espaçamento entre os cartões */
-    
+/* Estilização da área principal da página */
+main {
+    background: linear-gradient(135deg, #121212 0%, #14142b 100%); /* Gradiente escuro para o fundo da página */
+    min-height: 75vh; /* Define a altura mínima do conteúdo principal */
+    padding: 40px 20px; /* Espaçamento interno do conteúdo */
 }
 
-button{
-    margin-bottom: 30px; /* define a margim do botão */
-    width: 100%; /* define a largura do botão */
-    height: 40px; /* define a altura do botão */
-    background-color: #A020F0; /* define a cor de fundo do botão */
-    color: white; /* define a cor do texto do botão */
-    border: none; /* remove a borda do botão */
-    border-radius: 5px; /* define bordas arredondadas */
-    transition: all 0.3s ease; /* Suaviza as mudanças de estilo */
-
+/* Estilização dos cartões (mat-card do Angular Material) */
+mat-card {
+    background: linear-gradient(145deg, #1e1e2f, #2b2b3d); /* Cinzas azulados escuros */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(160, 32, 240, 0.2); /* Sombra combinando com o botão roxo */
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-/* Efeito neon ao passar o mouse */
+/* Estilização padrão dos botões */
+button {
+    margin-bottom: 30px; /* Espaço inferior do botão */
+    width: 100%; /* Ocupa toda a largura do container */
+    height: 45px; /* Altura padrão do botão */
+    background-color: #A020F0; /* Cor roxa como fundo do botão */
+    color: white; /* Texto em branco para contraste */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    font-weight: 600; /* Deixa o texto um pouco mais marcante */
+    letter-spacing: 0.5px; /* Espaçamento sutil entre letras */
+    transition: all 0.3s ease; /* Transições suaves para hover e active */
+}
+
+/* Efeito visual ao passar o mouse por cima do botão */
 button:hover {
-    background-color: #FF2DC6; /* Leve alteração na cor de fundo */
+    background: linear-gradient(135deg, #ff00cc, #3333ff); /* Gradiente neon roxo/azul no hover */
+    box-shadow: 0 6px 24px rgba(255, 45, 198, 0.5); /* Sombra com efeito glow neon */
 }
 
-/* Animação ao clicar */
+/* Efeito visual ao clicar no botão */
 button:active {
-    transform: scale(0.80); /* Reduz ligeiramente o tamanho do botão */
+    transform: scale(0.95); /* Efeito de "afundar" levemente ao clicar */
+    box-shadow: 0 3px 12px rgba(255, 45, 198, 0.4); /* Redução da sombra para simular profundidade */
 }
