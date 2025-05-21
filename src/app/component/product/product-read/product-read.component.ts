@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
 
@@ -8,6 +8,7 @@ import { ProductService } from '../product.service';
   styleUrls: ['./product-read.component.css'] // Caminho para o arquivo de estilos CSS
 })
 export class ProductReadComponent implements OnInit {
+  @Input() 
   products!: Product[]; // Lista de produtos
   displayedColumns = ['proId', 'proNome', 'proPrecoCusto', 'proPrecoVenda', 'action']; // Colunas exibidas na tabela
 

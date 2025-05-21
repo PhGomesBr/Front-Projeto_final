@@ -29,21 +29,3 @@
     padding-right: 5px; /* Espaçamento à direita do ícone */
 }
 
-/* Estilo do LED giratório */
-.led {
-    width: 10px;
-    height: 10px;
-    background-color: red; /* Cor do LED */
-    border-radius: 50%; /* Torna o LED circular */
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente no cabeçalho */
-    left: 50%; /* Centraliza horizontalmente no cabeçalho */
-    animation: orbit 5s linear infinite; /* Animação do LED */
-}
-
-/* Animação do LED */
-@keyframes orbit {
-    0% { transform: translate(-50px, -50px) rotate(0deg); }
-    100% { transform: translate(-50px, -50px) rotate(360deg); }
-}
-

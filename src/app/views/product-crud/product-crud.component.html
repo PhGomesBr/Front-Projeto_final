@@ -3,6 +3,12 @@
 <button mat-raised-button (click)="navigateToProductCreate()" color="primary">
     novo Produto
 </button>
-<app-product-read></app-product-read>
+<input 
+    type="text" 
+    placeholder="Pesquisar produto" 
+    [(ngModel)]="searchTerm" 
+    (input)="filterProducts()"
+    style="margin: 10px; padding: 5px; width: 250px">
+<app-product-read [products]="filteredProducts"></app-product-read>
 </mat-card>
 </main>

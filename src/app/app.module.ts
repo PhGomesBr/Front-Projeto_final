@@ -97,6 +97,7 @@ import { MatNativeDateModule } from '@angular/material/core'; // Adicionado
     MatSelectModule,               // Adicionado
     MatDatepickerModule,           // Adicionado
     MatNativeDateModule,           // Adicionado
+    FormsModule, // Adicione aqui
   ],
   providers: [],
   bootstrap: [AppComponent]
